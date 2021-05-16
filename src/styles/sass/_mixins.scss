@@ -1,0 +1,94 @@
+
+/* Large desktops and laptops */
+@mixin mw1180 {
+    @media (max-width: 1180px){
+        @content;
+    }
+}
+
+/* Special size for gallery */
+@mixin mw1030 {
+    @media (max-width: 1030px){
+        @content;
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@mixin mw979 {
+    @media (max-width: 979px){
+        @content;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@mixin mw768 {
+    @media (max-width: 768px){
+        @content;
+    }
+}
+/* Landscape phones and portrait tablets */
+@mixin mw600 {
+    @media (max-width: 600px){
+        @content;
+    }
+}
+
+/* Portrait phones and smaller */
+@mixin mw480 {
+    @media (max-width: 480px){
+        @content;
+    }
+}
+
+/* Iphone 5 */
+@mixin mw320 {
+    @media (max-width: 320px){
+        @content;
+    }
+}
+
+/* Multypurpose max-width mixin */
+@mixin mw($width) {
+    @media (max-width: $width + 'px') {
+      @content;
+    }
+}
+
+/* Multypurpose min-width mixin */
+@mixin minw($width) {
+    @media (min-width: $width + 'px') {
+      @content;
+    }
+}
+
+
+/* Responsive parametrs */
+
+$maxWidth: 1360;
+
+@mixin adaptive-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin adaptive-padding($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    padding: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin adaptive-width($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    width: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin adaptive-height($pcSize, $mobSize) {
+
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    height: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+/* End responsive parametrs */
