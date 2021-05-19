@@ -33,8 +33,17 @@
 
                 <div class="header__main">
                     <div class="header__hello">
-                        <h1 class="header__title">Hi, my name<br> is Kostya</h1>
-                        <p class="header__subtitle">I am Web Developer & Designer</p>
+                        
+                        <div class="hello-wrap">
+                            <span class="color1"></span>
+                            <span class="color2"></span>
+                            <div class="title-wrap">
+                                <h1 class="header__title">Hi, my name<br> is Kostya</h1>
+                            </div>
+                            <div class="subtitle-wrap">
+                                <p class="header__subtitle">I am Web Developer & Designer</p>
+                            </div>
+                        </div>
                         <a href="#portfolio" class="header__button">View my work</a>
                         <a href="#contacts" class="header__button">Get in touch</a>
                     </div>
@@ -46,41 +55,41 @@
         </header>
 
         <section class="skills">
-            <h1 class="skills__title">about my skills</h1>
+            <h1 class="skills__title block-title">about my skills</h1>
             <div class="skills__list">
                 <div class="skill__el">
-                    <img src="" alt="" />
+                    <img  class="skill__img" src="images/skills/html.png" alt="" />
                     <p class="skill__title">HTML/CSS</p>
                     <span class="skill__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
                         quasi eligendi id corporis
                     </span>
                 </div>
                 <div class="skill__el">
-                    <img src="" alt="" />
+                    <img class="skill__img" src="images/skills/js.png" alt="" />
                     <p class="skill__title">JavaScript</p>
                     <span class="skill__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
                         quasi eligendi id corporis! Quo ullam, distinctio</span>
                 </div>
                 <div class="skill__el">
-                    <img src="" alt="" />
+                    <img class="skill__img"  src="images/skills/db.png" alt="" />
                     <p class="skill__title">PHP</p>
                     <span class="skill__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
                         quasi eligendi id corporis! Quo ullam, distinctio</span>
                 </div>
                 <div class="skill__el">
-                    <img src="" alt="" />
+                    <img class="skill__img"  src="images/skills/design.png" alt=""  />
                     <p class="skill__title" >Design</p>
                     <span  class="skill__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
                         quasi eligendi id corporis! Quo ullam, distinctio</span>
                 </div>
                 <div class="skill__el">
-                    <img src="" alt="" />
+                    <img class="skill__img"  src="images/skills/speed.png" alt="" />
                     <p class="skill__title">Optimization</p>
                     <span class="skill__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
                         quasi eligendi id corporis! Quo ullam, distinctio</span>
                 </div>
                 <div class="skill__el">
-                    <img src="" alt="" />
+                    <img class="skill__img"  src="images/skills/cat.png" alt="" />
                     <p class="skill__title">Soft skills</p>
                     <span class="skill__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
                         quasi eligendi id corporis! Quo ullam, distinctio</span>
@@ -89,7 +98,7 @@
             </h1>
         </section>
         <section class="portfolio">
-            <h1 class="portfolio__title">selected works</h1>
+            <h1 class="portfolio__title block-title">selected works</h1>
             <div class="portfolio__works">
                 <div class="work">
                     <div class="work__img">
@@ -130,7 +139,7 @@
             </div>
         </section>
         <section class="aboutme">
-            <h1 class="aboutme__title">some facts about me</h1>
+            <h1 class="aboutme__title block-title">some facts about me</h1>
             <div class="aboutme__main">
                 <div class="aboutme__img"><img src="http://placeimg.com/640/480/cats" alt=""></div>
                 <div class="aboutme__facts">
@@ -155,7 +164,7 @@
         </section>
         <section class="contacts">
             <div class="contacts__wrap">
-                <h1 class="contacts__title">get in touch</h1>
+                <h1 class="contacts__title block-title">get in touch</h1>
                 <div class="contacts__main">
                     <div class="contacts__form">
                         <form action="">
@@ -182,8 +191,8 @@
     </div>
 
     <script src="libs/jquery-3.6.0.min.js"></script>
-    <script src="libs/jquery.easypiechart.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script> 
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
     <script src="scripts/main.js"></script>
 </body>
