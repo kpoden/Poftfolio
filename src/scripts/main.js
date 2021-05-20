@@ -28,20 +28,18 @@ gsap.to(".skill__el", {
     y: '0', 
     opacity: '1' });
 
+
 gsap.to(".header__image", {
     scrollTrigger: ".header__image", 
     scaleX: '1',
-    transformOrigin: 'left center',
-    delay: .8});
-
-
-
+    transformOrigin: 'right center',
+    delay: .5});
 
 gsap.to(".header-img-wrap", 1.5,{
     scrollTrigger: ".header__image", 
-    x: '-500', 
+    y: '-500', 
     ease: "Expo.easeInOut",
-    delay: 1
+    delay: .5
     });
 
 
