@@ -1,5 +1,5 @@
 .portfolio
-    max-width: 1200px
+    max-width: 1500px
     margin: 0 auto
     padding: 100px 0 100px
 
@@ -9,22 +9,40 @@
 
 
     &__works
-        max-width: 800px
+        max-width: 1200px
         margin: 0 auto
 
 
 .work
     display: flex
     align-items: center
+    justify-content: space-between
     margin-bottom: 45px
+    border-radius: 15px
+    font-family: SourceSansPro
+    font-size: 30px
+    font-weight: 100
+    padding: 50px 80px
+    &:nth-child(even)
+            text-align: right
 
-    &__img
-        width: 50%
-        img 
-            width: 350px
+    &:nth-child(1)
+        background: rgb(81,45,168);
+        background: linear-gradient(90deg, rgba(81,45,168,1) 0%, rgba(200,87,181,0.9948179955575981) 51%, rgba(216,27,96,1) 100%);
+
+
+    img 
+
+        height: 300px
+        width: 400px
+        object-fit: cover
 
 
     &__desc
-        width: 45%
+        width: 50%
+        color: #000
+
+        
+            
 
 
