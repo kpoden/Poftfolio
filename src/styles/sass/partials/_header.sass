@@ -37,6 +37,22 @@
 
         &__el
             display: block
+            position: relative
+
+            &:after
+                content: ''
+                display: block
+                position: absolute
+                bottom: -5px
+                left: 50%
+                transform: translateX(-50%)
+                width: 0px
+                height: 1px
+                background: #fff
+                transition: .2s
+
+            &:hover::after
+                width: 90%
     &__main
         padding: 50px 0 0 0
         display: flex
@@ -102,16 +118,19 @@
         opacity: 0
 
     &__button
-        padding: 7px 15px
+        padding: 15px 30px
         margin: 30px 15px 0 0
         display: inline-block
-        font-size: 14px
+        font-size: 18px
         font-family: OpenSans
-        background: #fff
-
-
+        border-radius: 25px
+        background: linear-gradient(to left, #ffffff,  50%, #a589e4 50%) right;
+        background-size: 210%;
+        transition: .2s ease-out;
         &:hover
-            
+            background-position: left
+            color: #ffffff
+
 
     &__image
         transform: scaleX(0)
@@ -129,13 +148,15 @@
         img
             width: 90%
             position: relative
-            transform: translateY(-20px)
-            // opacity: 0
+            transform: translateY(100px)
+
 
         .header-img-wrap
             position: absolute
+            bottom: -50px
             z-index: 1000
             display: block
             width: 450px
-            height: 450px
+            height: 310px
             background: #dad59b
+            // border: 1px solid #000

@@ -1,7 +1,5 @@
 .portfolio
-    max-width: 1500px
-    margin: 0 auto
-    padding: 100px 0 100px
+    background: #f1faf5
 
     &__title
         font-size: 36px
@@ -12,35 +10,101 @@
         max-width: 1200px
         margin: 0 auto
 
+    &__wrap
+        max-width: 1500px
+        margin: 0 auto
+        padding: 100px 0 100px
+        
+
 
 .work
     display: flex
     align-items: center
-    justify-content: space-between
-    margin-bottom: 45px
+    justify-content: center
     border-radius: 15px
     font-family: SourceSansPro
     font-size: 30px
     font-weight: 100
-    padding: 50px 80px
-    &:nth-child(even)
-            text-align: right
+    padding: 40px 80px
 
-    &:nth-child(1)
-        background: rgb(81,45,168);
-        background: linear-gradient(90deg, rgba(81,45,168,1) 0%, rgba(200,87,181,0.9948179955575981) 51%, rgba(216,27,96,1) 100%);
+    &__img
+        border-radius: 15px
+        overflow: hidden
+        height: 300px
+        width: 400px
+        cursor: pointer
+        transition: .2s
+        position: relative
+        
+
+    &__over
+        color: #fff
+        text-align: center
+        line-height: 300px
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        opacity: 0
+        background: rgba(0,0,0,.5)
+        z-index: 1000
+        transition: .2s
+
+        &:hover
+            opacity: 1
+
+            
 
 
+    &:nth-child(even) .work__img
+        margin-left: 50px
+
+    &:nth-child(odd) .work__img
+        margin-right: 50px
+    
     img 
-
         height: 300px
         width: 400px
         object-fit: cover
 
-
     &__desc
         width: 50%
-        color: #000
+        color: #383838
+        background: #ffffff
+        border: 1px solid #eee
+        border-radius: 15px
+        height: 300px
+        width: 600px
+        display: flex
+        align-items: start
+        justify-content: space-between
+        padding: 35px
+        font-size: 16px
+        flex-direction: column
+
+    &__buttons
+        display: flex
+
+    &__btn
+        display: block
+        width: 120px
+        margin-right: 20px
+        text-align: center
+        padding: 10px 20px
+        border-radius: 25px
+        border: 1px solid #a589e4
+        color: #fff
+        background: linear-gradient(to left, #a589e4,  50%, #ffffff  50%) right;
+        background-size: 220%;
+        transition: .2s ease-out;
+
+        &:hover
+            background-position: left
+            color: #a589e4
+
+
+
 
         
             

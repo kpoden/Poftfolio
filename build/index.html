@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles/app.css" />
-    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <title>KONSTANTIN</title>
 </head>
@@ -23,17 +21,17 @@
                     </div>
                     <nav class="header__nav nav__bar">
                         <ul class="nav__list">
-                            <li class="nav__el"><a href="">Main</a></li>
-                            <li class="nav__el"><a href="">Skills</a></li>
-                            <li class="nav__el"><a href="">About me</a></li>
-                            <li class="nav__el"><a href="">Contacts</a></li>
+                            <li class="nav__el"><a class="nav__link" href="">Main</a></li>
+                            <li class="nav__el"><a class="nav__link" href="">Skills</a></li>
+                            <li class="nav__el"><a class="nav__link" href="">About me</a></li>
+                            <li class="nav__el"><a class="nav__link" href="">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="header__main">
                     <div class="header__hello">
-                        
+
                         <div class="hello-wrap">
                             <span class="color1"></span>
                             <span class="color2"></span>
@@ -59,7 +57,7 @@
             <h1 class="skills__title block-title">about my skills</h1>
             <div class="skills__list">
                 <div class="skill__el">
-                    <img  class="skill__img" src="images/skills/html.png" alt="" />
+                    <img class="skill__img" src="images/skills/html.png" alt="" />
                     <p class="skill__title">HTML/CSS</p>
                     <span class="skill__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
                         quasi eligendi id corporis
@@ -72,25 +70,25 @@
                         quasi eligendi id corporis! Quo ullam, distinctio</span>
                 </div>
                 <div class="skill__el">
-                    <img class="skill__img"  src="images/skills/db.png" alt="" />
+                    <img class="skill__img" src="images/skills/db.png" alt="" />
                     <p class="skill__title">PHP</p>
                     <span class="skill__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
                         quasi eligendi id corporis! Quo ullam, distinctio</span>
                 </div>
                 <div class="skill__el">
-                    <img class="skill__img"  src="images/skills/design.png" alt=""  />
-                    <p class="skill__title" >Design</p>
-                    <span  class="skill__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+                    <img class="skill__img" src="images/skills/design.png" alt="" />
+                    <p class="skill__title">Design</p>
+                    <span class="skill__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
                         quasi eligendi id corporis! Quo ullam, distinctio</span>
                 </div>
                 <div class="skill__el">
-                    <img class="skill__img"  src="images/skills/speed.png" alt="" />
+                    <img class="skill__img" src="images/skills/speed.png" alt="" />
                     <p class="skill__title">Optimization</p>
                     <span class="skill__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
                         quasi eligendi id corporis! Quo ullam, distinctio</span>
                 </div>
                 <div class="skill__el">
-                    <img class="skill__img"  src="images/skills/cat.png" alt="" />
+                    <img class="skill__img" src="images/skills/cat.png" alt="" />
                     <p class="skill__title">Soft skills</p>
                     <span class="skill__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
                         quasi eligendi id corporis! Quo ullam, distinctio</span>
@@ -99,42 +97,69 @@
             </h1>
         </section>
         <section class="portfolio">
-            <h1 class="portfolio__title block-title">selected works</h1>
-            <div class="portfolio__works">
-                <div class="work">
-                    <div class="work__img">
-                        <img src="images/portfolio/1.png" alt="">
+
+            <div class="portfolio__wrap">
+                <h1 class="portfolio__title block-title">selected works</h1>
+                <div class="portfolio__works">
+                    <div class="work">
+                        <div class="work__img">
+                            <img src="images/portfolio/1.png" alt="">
+                            <a href=""><span class="work__over">View Live &nbsp;<span class='fas fa-external-link-alt'></span></a>
+                        </div>
+                        <div class="work__desc">
+                            <h4 class="work__title">BOUNCY - Web Development Agency</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+                                quasi eligendi id corporis! Quo ullam, distinctio</p>
+                            <div class="work__buttons">
+                                <a href="#" class="work__btn">View Live</a>
+                                <a href="#" class="work__btn">Github</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="work__desc">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-                            quasi eligendi id corporis! Quo ullam, distinctio</p>
+                    <div class="work" style="flex-direction: row-reverse;">
+                        <div class="work__img">
+                            <img src="images/portfolio/2.png" alt="">
+                            <a href=""><span class="work__over">View Live &nbsp;<span class='fas fa-external-link-alt'></span></a>
+                        </div>
+                        <div class="work__desc">
+                            <h4 class="work__title">AVRASYA - Hair Transplantation Clinic</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+                                quasi eligendi id corporis! Quo ullam, distinctio</p>
+                            <div class="work__buttons">
+                                <a href="#" class="work__btn">View Live</a>
+                                <a href="#" class="work__btn">Github</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="work" style="flex-direction: row-reverse;">
-                    <div class="work__img" >
-                        <img src="images/portfolio/2.png" alt="">
+                    <div class="work">
+                        <div class="work__img">
+                            <img src="images/portfolio/3.png" alt="">
+                            <a href=""><span class="work__over">View Live &nbsp;<span class='fas fa-external-link-alt'></span></a>
+                        </div>
+                        <div class="work__desc">
+                            <h4 class="work__title">Megadom - real estate agency</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+                                quasi eligendi id corporis! Quo ullam, distinctio</p>
+                            <div class="work__buttons">
+                                <a href="#" class="work__btn">View Live</a>
+                                <a href="#" class="work__btn">Github</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="work__desc">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-                            quasi eligendi id corporis! Quo ullam, distinctio</p>
-                    </div>
-                </div>
-                <div class="work">
-                    <div class="work__img" >
-                        <img src="images/portfolio/3.png" alt="">
-                    </div>
-                    <div class="work__desc">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-                            quasi eligendi id corporis! Quo ullam, distinctio</p>
-                    </div>
-                </div>
-                <div class="work" style="flex-direction: row-reverse;">
-                    <div class="work__img" >
-                        <img src="http://placeimg.com/640/480/fashion" alt="">
-                    </div>
-                    <div class="work__desc">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-                            quasi eligendi id corporis! Quo ullam, distinctio</p>
+                    <div class="work" style="flex-direction: row-reverse;">
+                        <div class="work__img">
+                            <img src="images/portfolio/4.png" alt="">
+                            <a href=""><span class="work__over">View Live &nbsp;<span class='fas fa-external-link-alt'></span></a>
+                        </div>
+                        <div class="work__desc">
+                            <h4 class="work__title">DART SERVICES - simple landing page</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+                                quasi eligendi id corporis! Quo ullam, distinctio</p>
+                            <div class="work__buttons">
+                                <a href="#" class="work__btn">View Live</a>
+                                <a href="#" class="work__btn">Github</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -170,8 +195,8 @@
                     <div class="contacts__form">
                         <form action="">
                             <div class="input-wrap">
-                                <input class="contacts__field" type="text" name="" id="" value = "name">
-                                <input class="contacts__field" type="text" name="" id="" value = "email">
+                                <input class="contacts__field" type="text" name="" id="" value="name">
+                                <input class="contacts__field" type="text" name="" id="" value="email">
                             </div>
                             <textarea class="contacts__msg" name="" id="" cols="30" rows="10">drop me a line</textarea>
                         </form>
@@ -193,8 +218,7 @@
 
     <script src="libs/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script> 
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
