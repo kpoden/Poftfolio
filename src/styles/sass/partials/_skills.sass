@@ -1,5 +1,5 @@
 .skills
-    padding: 100px 0 100px 0
+    padding: 100px 30px 100px 
     max-width: 1500px
     margin: 0 auto
 
@@ -11,6 +11,8 @@
         flex-wrap: wrap
         margin: 0 auto
         max-width: 1500px
+        +mw480
+            justify-content: center
 
 .skill
 
@@ -19,12 +21,17 @@
         padding: 10px 20px 
         border: 1px #eee solid 
         margin: 25px 0 30px
-        height: 270px
+        min-height: 270px
         border-radius: 20px
         color: #333
         font-family: Montserrat
         overflow: hidden
         box-shadow: 2px 2px 5px 0px rgba(57, 73, 171, 0.1)
+
+        +mw979
+            width: 47%
+        +mw480
+            width: 85%
         
 
     &__img

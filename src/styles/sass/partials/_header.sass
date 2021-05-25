@@ -1,5 +1,7 @@
 .header
     padding: 0 55px
+    position: relative
+    background: #fff
 
     &__wrap
         background: url('../images/header/bg.png')
@@ -9,7 +11,7 @@
         border-radius: 20px
         max-width: 2000px
         padding: 0 30px
-        position: relative
+        
 
 
     &__top
@@ -25,7 +27,27 @@
 
     .nav
         &__bar
-            width: 35%
+            width: 40%
+            transition: .2s
+            +mw(1350)
+                width: 60%
+            +mw1180
+                width: 70%
+            +mw979
+                position: fixed
+                display: flex
+                top: 10px
+                left: 50%
+                transform: translate(-50%, -110%)
+                background: blue
+                height: 95%
+                z-index: -100
+                align-items: center
+                justify-content: center
+
+            &--active
+                transform: translate(-50%, 0)
+                z-index: 1000
         &__list
             display: flex
             justify-content: space-between
@@ -34,25 +56,109 @@
             color: #fff
             font-size: 18px
             letter-spacing: 2px
+            +mw979
+                flex-direction: column
+                background: red
+                align-items: center
+                height: 40%
+                width: 60%
+                justify-content: center
+                li
+                    height: 60px
+                    line-height: 60px
+                    position: relative
+                    
 
         &__el
             display: block
             position: relative
-
-            &:after
+            &::after
                 content: ''
                 display: block
                 position: absolute
-                bottom: -5px
+                top: 125%
                 left: 50%
-                transform: translateX(-50%)
-                width: 0px
                 height: 1px
+                width: 0%
+                transform: translate(-50%, -50%)
                 background: #fff
+                opacity: 0
                 transition: .2s
-
+                +mw979
+                    top: 51%
             &:hover::after
+                opacity: 1
                 width: 90%
+
+                +mw979
+                    width: 130%
+
+            // &::after
+            //     content: ''
+            //     display: block
+            //     position: absolute
+            //     bottom: -5px
+            //     left: 50%
+            //     transform: translateX(-50%)
+            //     width: 0px
+            //     height: 1px
+            //     background: #fff
+            //     transition: .2s   
+
+            // &:hover::after
+            //     width: 150%
+
+            //     +mw979
+            //         bottom: 50%
+            //         height: 2px
+
+                
+
+                      
+                
+    .burger
+        display: none
+        width: 70px
+        height: 50px
+        position: absolute
+        top: 55px
+        right: 150px
+        z-index: 0
+        transition: .1s
+        transform: translateX(60px)
+        cursor: pointer
+        +mw979
+            display: block
+        span
+            display: block
+            position: absolute
+            height: 4px
+            width: 100%
+            background: #ffffff
+            transition: .2s
+            &:nth-child(1)
+                top: 0
+            &:nth-child(2)
+                top: 50%
+                transform: translateY(-2px)
+            &:nth-child(3)
+                top: 100%
+                transform:  translateY(-2px)
+    .burger__in    
+        position: fixed
+        span
+            &:nth-child(1)
+                transform:  translateY(25px) rotate(-135deg)
+            &:nth-child(2)
+                opacity: 0
+            &:nth-child(3)
+                transform:  translateY(-25px) rotate(135deg)
+
+    .burger--active
+        display: none
+
+
+        
     &__main
         padding: 50px 0 0 0
         display: flex
@@ -62,12 +168,16 @@
         margin: 0 auto
         min-height: 600px
         position: relative
+        +mw979
+            justify-content: center 
 
 
  
 
     &__hello
         color: #2a1c5c
+        +mw979
+            text-align: center
         
     .hello-wrap
         position: relative
@@ -142,6 +252,8 @@
         justify-content: center
         overflow: hidden
         position: relative
+        +mw979
+            display: none
         
         
 

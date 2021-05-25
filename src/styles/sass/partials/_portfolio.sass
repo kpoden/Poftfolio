@@ -26,6 +26,8 @@
     font-size: 30px
     font-weight: 100
     padding: 40px 80px
+    +mw480
+        flex-direction: column
 
     &__img
         border-radius: 15px
@@ -95,16 +97,22 @@
         border-radius: 25px
         border: 1px solid #a589e4
         color: #fff
-        background: linear-gradient(to left, #a589e4,  50%, #ffffff  50%) right;
-        background-size: 220%;
-        transition: .2s ease-out;
+        background: linear-gradient(to left, #a589e4,  50%, #ffffff  50%) right
+        background-size: 220%
+        transition: .2s ease-out
 
+        
         &:hover
             background-position: left
             color: #a589e4
 
 
-
+        &--light
+            background: linear-gradient(to left, #ffffff,  50%, #a589e4  50%) right
+            background-size: 220%
+            color: #a589e4
+            &:hover
+                color: #fff
 
         
             

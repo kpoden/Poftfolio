@@ -51,7 +51,14 @@ gsap.to(".header-img-wrap", 1.5,{
 ////**** GSAP SECTION END ****////
 
 
-
+$('.burger__out').on('click', function() {
+    $(this).addClass('burger--active');
+    $('.nav__bar').addClass('nav__bar--active');
+})
+$('.burger__in').on('click', function() {
+    $('.burger__out').removeClass('burger--active');
+    $('.nav__bar').removeClass('nav__bar--active');
+})
 
 
 
