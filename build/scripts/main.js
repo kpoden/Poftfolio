@@ -21,12 +21,14 @@ tl.to('.header__subtitle',  { opacity: '1'})
 gsap.from(".skill__el", {
     scrollTrigger: ".skill__el", 
     y: '100px', 
+    stagger: 0.15,
     opacity: 0
   });
 
 gsap.to(".skill__el", {
     scrollTrigger: ".skill__el", 
     y: '0', 
+    stagger: 0.15,
     opacity: '1' });
 
 
@@ -46,6 +48,42 @@ gsap.to(".header-img-wrap", 1.5,{
     y: '-500', 
     ease: "Expo.easeInOut",
     delay: .5
+    });
+
+gsap.to(".header__button", {
+    scrollTrigger: ".header__image", 
+    y: '0', 
+    opacity: 1,
+    ease: "Expo.easeInOut",
+    delay: 1.9,
+    stagger: 0.15
+    });
+
+gsap.to(".nav__el", 1.2,{
+    scrollTrigger: ".header__image", 
+    y: '0', 
+    ease: "Power3.easeInOut",
+    opacity: 1,
+    stagger: -0.1,
+    ease: "power2.inOut"
+    });
+
+
+
+gsap.from(".work", 1,{
+    scrollTrigger: ".work", 
+    y: '50', 
+    opacity: 0,
+    stagger: 0.3,
+    delay: 0.3
+    });
+
+gsap.to(".work", 1,{
+    scrollTrigger: ".work", 
+    y: '0', 
+    opacity: 1,
+    stagger: 0.3,
+    delay: 0.3
     });
 
 ////**** GSAP SECTION END ****////

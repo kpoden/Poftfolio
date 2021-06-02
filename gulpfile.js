@@ -29,7 +29,8 @@ var path = {
         libs: 'build/libs',
         img: 'build/images/',
         scripts: 'build/scripts/',
-        fonts: 'build/fonts/'
+        fonts: 'build/fonts/',
+        projects: 'build/projects'
     },
 
     src: {
@@ -40,7 +41,8 @@ var path = {
         imgmax: 'src/images/max/**/*.*',
         imgsvg: 'src/images/svg/**/*.*',
         scripts: 'src/scripts/**/*.js',
-        fonts: 'src/fonts/**/*.*'
+        fonts: 'src/fonts/**/*.*',
+        projects: 'src/projects/**/*.*'
     },
 
     watch: {
@@ -116,13 +118,18 @@ gulp.task('fonts:build', function(){
         .pipe(gulp.dest(path.build.fonts))
 });
 
+gulp.task('projects:build', function(){
+    return gulp.src(path.src.projects)
+        .pipe(gulp.dest(path.build.projects))
+});
+
 gulp.task('libs:build', function(){
     return gulp.src(path.src.libs)
         .pipe(gulp.dest(path.build.libs))
 });
 
 gulp.task('build', gulp.series(
-        'clean', gulp.series(['html:build', 'styles:build', 'scripts:build', 'img:build', 'fonts:build', 'libs:build'])
+        'clean', gulp.series(['html:build', 'styles:build', 'scripts:build', 'img:build', 'fonts:build', 'libs:build', 'projects:build'])
     )
 );
 
