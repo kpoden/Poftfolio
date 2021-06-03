@@ -1,2 +1,2 @@
 # poden
- My portfolio site
+ My portfolio site, with list of my works.
