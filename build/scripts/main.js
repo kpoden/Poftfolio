@@ -89,6 +89,7 @@ gsap.to(".work", 1,{
 ////**** GSAP SECTION END ****////
 
 
+////**** MOBILE MENU SECTION ****////
 $('.burger__out').on('click', function() {
     $(this).addClass('burger--active');
     $('.nav__bar').addClass('nav__bar--active');
@@ -97,10 +98,16 @@ $('.burger__in').on('click', function() {
     $('.burger__out').removeClass('burger--active');
     $('.nav__bar').removeClass('nav__bar--active');
 })
+})
 
+////**** MOBILE MENU SECTION END****////
 
+$('.contacts__field, .contacts__msg').on('focus', function() {
+    $(this).next().addClass('focused');
+})
 
-
-
-
+$('.contacts__field, .contacts__msg').on('blur', function() {
+    if($(this).val() === '') {
+        $(this).next().removeClass('focused');
+    }
 })

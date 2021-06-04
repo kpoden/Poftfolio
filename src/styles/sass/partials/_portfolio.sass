@@ -26,8 +26,8 @@
     font-size: 30px
     font-weight: 100
     padding: 40px 80px
-    +mw480
-        flex-direction: column
+    +mw768
+        flex-direction: column !important
 
     &__img
         border-radius: 15px
@@ -37,6 +37,11 @@
         cursor: pointer
         transition: .2s
         position: relative
+        flex-shrink: 0
+        +mw768
+            margin: 0 0 15px !important
+            width: 90%
+            min-width: 290px
         
 
     &__over
@@ -67,8 +72,8 @@
         margin-right: 50px
     
     img 
-        height: 300px
-        width: 400px
+        height: 100%
+        width: 100%
         object-fit: cover
 
     &__desc
@@ -86,6 +91,11 @@
         font-size: 16px
         flex-direction: column
 
+        +mw768
+            width: 90%
+            min-width: 290px
+            align-items: center
+
     &__buttons
         display: flex
 
@@ -101,6 +111,9 @@
         background: linear-gradient(to left, #a589e4,  50%, #ffffff  50%) right
         background-size: 220%
         transition: .2s ease-out
+        +mw768
+            width: 90px
+            padding: 5px
 
         
         &:hover
