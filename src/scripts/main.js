@@ -89,18 +89,44 @@ gsap.to(".work", 1,{
 ////**** GSAP SECTION END ****////
 
 
+/*-----------------------------------------------------------*/
+
+
 ////**** MOBILE MENU SECTION ****////
+
 $('.burger__out').on('click', function() {
     $(this).addClass('burger--active');
     $('.nav__bar').addClass('nav__bar--active');
+    $('.dark-bg').addClass('dark-bg--active');
 })
 $('.burger__in').on('click', function() {
     $('.burger__out').removeClass('burger--active');
     $('.nav__bar').removeClass('nav__bar--active');
+    $('.dark-bg').removeClass('dark-bg--active');
 })
 })
 
+$('.dark-bg').on('click', function(){
+    $('.burger__out').removeClass('burger--active');
+    $('.nav__bar').removeClass('nav__bar--active');
+    $('.dark-bg').removeClass('dark-bg--active');
+})
+
+window.onresize = function(event) {
+    if($(window).width() > 979) {
+        $('.burger__out').removeClass('burger--active');
+        $('.nav__bar').removeClass('nav__bar--active');
+        $('.dark-bg').removeClass('dark-bg--active');
+    }
+};
+
 ////**** MOBILE MENU SECTION END****////
+
+
+/*-----------------------------------------------------------*/
+
+
+////**** FOOTER FORM SECTION  ****////
 
 $('.contacts__field, .contacts__msg').on('focus', function() {
     $(this).next().addClass('focused');
@@ -111,4 +137,4 @@ $('.contacts__field, .contacts__msg').on('blur', function() {
         $(this).next().removeClass('focused');
     }
 })
-
+////**** FOOTER FORM SECTION END ****////

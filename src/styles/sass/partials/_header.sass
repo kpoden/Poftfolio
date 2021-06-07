@@ -2,6 +2,8 @@
     padding: 0 55px
     position: relative
     background: #fff
+    +mw979
+        padding: 0 20px
 
     &__wrap
         background: url('../images/header/bg.png')
@@ -11,6 +13,7 @@
         border-radius: 20px
         max-width: 2000px
         padding: 0 30px
+        position: relative
         
 
 
@@ -22,13 +25,16 @@
         padding: 40px 30px
 
     &__logo
+        position: relative
+        +mw480
+            left: -30px
         img
             height: 80px
 
     .nav
         &__bar
             width: 40%
-            transition: .2s
+            transition: .3s
             +mw(1350)
                 width: 60%
             +mw1180
@@ -44,6 +50,10 @@
                 z-index: -100
                 align-items: center
                 justify-content: center
+                max-height: 1100px
+                min-height: 450px
+
+                
 
             &--active
                 transform: translate(-50%, 0)
@@ -63,6 +73,9 @@
                 height: 40%
                 width: 60%
                 justify-content: center
+            +mw320
+                font-size: 14px
+
                     
                     
 
@@ -84,13 +97,16 @@
         height: 50px
         position: absolute
         top: 55px
-        right: 150px
+        right: 120px
         z-index: 0
         transition: .1s
         transform: translateX(60px)
         cursor: pointer
         +mw979
             display: block
+        +mw480
+            right: 85px
+        
         span
             display: block
             position: absolute
@@ -121,7 +137,7 @@
         display: none
         
     &__main
-        padding: 50px 0 0 0
+        padding: 50px 0 20px 0
         display: flex
         justify-content: space-between
         align-items: center
@@ -131,6 +147,7 @@
         position: relative
         +mw979
             justify-content: center 
+            min-height: 450px
 
 
     &__hello
@@ -141,6 +158,9 @@
     .hello-wrap
         position: relative
         overflow: hidden
+        margin-right: 30px
+        +mw979
+            margin: 0 0 15px 0
         
     .color1, .color2
         display: block
@@ -172,6 +192,12 @@
         z-index: 100
         position: relative
         transform: translateY(-700px)
+        +mw1180
+            font-size: 70px
+        +mw979
+            +adaptive-font(100, 35)
+            padding: 10px 7px 15px
+            
 
     &__subtitle
         font-size: 35px
@@ -185,10 +211,13 @@
         z-index: 100
         position: relative
         opacity: 0
+        +mw979
+            +adaptive-font(35, 25)
 
     &__button
         padding: 15px 30px
         margin: 30px 15px 0 0
+        width: 180px
         display: inline-block
         font-size: 18px
         font-family: OpenSans
@@ -201,6 +230,10 @@
         &:hover
             background-position: left
             color: #ffffff
+        +mw979
+            width: 140px
+            font-size: 12px
+            margin: 20px 10px 0
 
 
     &__image
