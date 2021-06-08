@@ -1,9 +1,38 @@
 .block-title
-    font-family: OpenSans
+    font-family: BigJohn
+    font-weight: 500
     text-transform: uppercase
     font-size: 36px
-    color: #000
+    color: #3949ab
     padding-bottom: 50px
+    z-index: 2
+    position: relative
+    transform: translateY(-100px)
+    overflow: hidden
+
+
+
+.title-wrap
+    position: relative
+    overflow: hidden
+
+.title-line
+    content: ''
+    display: block
+    position: absolute
+    top: 0px
+    left: 0
+    width: 15%
+    height: 30px
+    background: #34961b
+    z-index: 1
+    opacity: .7
+    +mw600
+        width: 40%
+
+
+
+        
 
 .dark-bg
     position: absolute
@@ -18,4 +47,4 @@
 
     &--active
         opacity: 1
-        z-index: 100
+        z-index: 1000

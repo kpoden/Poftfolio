@@ -18,16 +18,15 @@
         max-width: 1200px
         display: flex
         flex-wrap: wrap
-        flex: 100% 0 0
         justify-content: space-between
         margin: 0 auto
+        width: 95%
 
     &__text
-        width: 100%
         padding: 25px 0
+        font-weight: 900
 
-    &__form
-        width: 50%
+        
 
     
 
@@ -45,10 +44,13 @@
         top: 50%
         transform: translateY(-50%)
         left: 10px
-        color: #000
+        color: #666666
         transition: .2s
 
-
+    .forms-wrap
+        width: 50%
+        +mw1030
+            width: 100%
     .textarea-field-wrap
         position: relative
 
@@ -56,7 +58,7 @@
         position: absolute
         top: 10px
         left: 10px
-        color: #000
+        color: #666666
         transition: .2s
 
     &__field
@@ -68,9 +70,9 @@
         border-radius: 5px
         transition: .1s
         &:focus
-            box-shadow: 0px 0px 3px 1px #bd9457
+            box-shadow: 0px 0px 3px 2px #bd9457
     .focused
-        top: -10px
+        top: -12px
         left: 2px
         font-size: 11px
         color: #fff
@@ -87,14 +89,18 @@
         transition: .1s
         padding: 5px 10px
         &:focus
-            box-shadow: 0px 0px 3px 1px #bd9457
+            box-shadow: 0px 0px 3px 2px #bd9457
 
     &__links
+        
 
 
     &__list
 
 
     &__item
+        padding-bottom: 20px
+        font-size: 16px
+        font-weight: 100
 
 

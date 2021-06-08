@@ -86,6 +86,51 @@ gsap.to(".work", 1,{
     delay: 0.3
     });
 
+
+gsap.to(".skills__title.block-title", 1,{
+    scrollTrigger: ".skills__title", 
+    y: '0', 
+    delay: 0.1
+    });
+
+gsap.from(".skills__title + .title-line", .4,{
+    scrollTrigger: ".skills__title", 
+    width: '0', 
+    delay: 0.2
+    });
+    
+gsap.to(".block-title.portfolio__title", 1,{
+    scrollTrigger: ".portfolio__title", 
+    y: '0', 
+    delay: 0.1
+    });
+
+gsap.from(".portfolio__title + .title-line", .4,{
+    scrollTrigger: ".portfolio__title", 
+    width: '0', 
+    delay: 0.2
+    });
+
+gsap.to(".block-title.contacts__title", 1,{
+    scrollTrigger: ".contacts__title", 
+    y: '0', 
+    delay: 0.1
+    });
+
+gsap.from(".contacts__title + .title-line", .4,{
+    scrollTrigger: ".contacts__title", 
+    width: '0', 
+    delay: 0.2
+    });
+
+
+
+// document.querySelector("nav__link").forEach((btn, index) => {
+//     btn.addEventListener("click", () => {
+//         gsap.to(window, {duration: 1, scrollTo:{y:"#section" + (index + 1), offsetY:70}});
+//     });
+    // });
+
 ////**** GSAP SECTION END ****////
 
 
