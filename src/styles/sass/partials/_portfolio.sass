@@ -26,8 +26,12 @@
     font-size: 30px
     font-weight: 100
     padding: 40px 80px
+    +mw979
+        padding: 40px 20px
+
     +mw768
         flex-direction: column !important
+        padding: 30px 20px
 
     &__img
         border-radius: 15px
@@ -38,6 +42,8 @@
         transition: .2s
         position: relative
         flex-shrink: 0
+        +mw979
+            width: 350px
         +mw768
             margin: 0 0 15px !important
             width: 95%
