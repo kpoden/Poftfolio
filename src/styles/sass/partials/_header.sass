@@ -29,7 +29,7 @@
         +mw480
             left: -30px
         img
-            height: 80px
+            height: 50px
 
     .nav
         &__bar
@@ -182,7 +182,7 @@
 
     &__title
         font-size: 85px
-        padding-bottom: 20px
+        padding: 0 0 20px 5px
         font-family: BigJohn
         text-transform: uppercase
         background: #eee5ca
@@ -211,7 +211,7 @@
         z-index: 100
         position: relative
         opacity: 0
-        padding: 0 0 5px 0
+        padding: 0 0 5px 5px
         +mw979
             +adaptive-font(35, 25)
 
@@ -264,3 +264,28 @@
             width: 450px
             height: 650px
             background: #dad59b
+
+    .lang
+        position: absolute
+        top: 50%
+        right: 10px
+        font-size: 12px
+        transform: rotate(90deg)
+        font-family: Montserrat
+        
+
+        a
+            color: #ffffff
+            opacity: .3
+
+            &:hover
+                opacity: .6
+
+        &__div
+            height: 10px
+            background: #fff
+            width: 2px
+            display: inline-block
+            margin: 0 10px
+            color: #ffffff
+            opacity: .3

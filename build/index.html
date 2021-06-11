@@ -5,6 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+
     <link rel="stylesheet" href="styles/app.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     
@@ -62,7 +68,9 @@
                         <img src="images/header/1.jpg" alt="" />
                     </div>
                 </div>
+                <div class="lang"><a href="#">EN</a> <span class="lang__div"></span> <a href="#">RU</a></div>
             </div>
+           
         </header>
 
         <section class="skills">
@@ -143,8 +151,7 @@
                         </div>
                         <div class="work__desc">
                             <h4 class="work__title">AVRASYA - Hair Transplantation Clinic</h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-                                quasi eligendi id corporis! Quo ullam, distinctio</p>
+                            <p>Hair transplantation clinic home page. Responsive design with mobile menu, gallery, popups and forms. </p>
                             <div class="work__buttons">
                                 <a href="projects/hairreplacement/index.html" target="_blank" class="work__btn">View
                                     live</a>
@@ -160,8 +167,7 @@
                         </div>
                         <div class="work__desc">
                             <h4 class="work__title">Megadom - real estate agency</h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-                                quasi eligendi id corporis! Quo ullam, distinctio</p>
+                            <p>Real estate agency site, several pages, smooth animations, video slider, </p>
                             <div class="work__buttons">
                                 <a href="#" class="work__btn">View live</a>
                                 <a href="https://github.com/kpoden/Megadom"  target="_blank" class="work__btn work__btn--light">Github</a>
@@ -221,14 +227,14 @@
                     <div class="forms-wrap">
                         <p class="contacts__text">Here you can drop me a line...</p>
                         <div class="contacts__form">
-                            <form>
+                            <form method="post" action="send.php">
                                 <div class="input-wrap">
                                     <div class="input-field-wrap">
-                                        <input class="contacts__field" type="text" name="name">
+                                        <input class="contacts__field" type="text" name="name" id="name">
                                         <span class="input-field-name">Name</span>
                                     </div>
                                     <div class="input-field-wrap">
-                                        <input class="contacts__field" type="text" name="email">
+                                        <input class="contacts__field" type="text" name="email" id="email">
                                         <span class="input-field-name">Email</span>
                                     </div>
                                 </div>
@@ -237,6 +243,7 @@
                                         resizable="false"></textarea>
                                     <span class="textarea-field-name">Message</span>
                                 </div>
+                                <input class="contacts__submit" type="submit" value="Send">
                             </form>
                         </div>
                     </div>

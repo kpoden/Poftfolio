@@ -173,6 +173,13 @@ window.onresize = function(event) {
 
 ////**** FOOTER FORM SECTION  ****////
 
+$('.contacts__field, .contacts__msg').val('');
+
+if($('.contacts__field, .contacts__msg').val !== "") {
+    $(this).next().addClass('focused');
+}
+
+
 $('.contacts__field, .contacts__msg').on('focus', function() {
     $(this).next().addClass('focused');
 })
