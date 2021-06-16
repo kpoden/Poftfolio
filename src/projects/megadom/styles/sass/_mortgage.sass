@@ -1,0 +1,190 @@
+.mortgage
+    width: 100%
+    background: linear-gradient(180deg, rgba(57, 49, 133, 0) 0%, #393185 100%), #322A85
+    h3
+        text-align: center
+        font-size: 33px
+        padding: 50px 0 40px
+        color: #fff
+
+    &-main
+        color: #fff
+        width: 1000px
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        +mw(1024px)
+            flex-wrap: wrap
+
+
+        &__text
+            max-width: 350px
+            padding-bottom: 112px
+            margin-right: 63px
+            +mw(1300px)
+                margin-right: 0
+            p
+                font-size: 18px
+                line-height: 29px
+
+        &__graph
+            width: 516px
+            height: 272px
+            position: relative
+            margin-left: 80px
+            color: #C6C6C6
+            font-size: 18px
+            text-align: center
+
+            #coord
+                position: absolute
+                left: 0
+                bottom: 0
+                
+            #line
+                position: absolute
+                left: 52px
+                bottom: 46px
+                
+            #gradient
+                position: absolute
+                left: 55px
+                bottom: 6px
+                
+            #pin1
+                position: absolute
+                left: -10px
+                top: -1px
+                
+            #pin2
+                position: absolute
+                left: -10px
+                top: 78px
+                
+            #pin3
+                position: absolute
+                left: -10px
+                top: 150px
+                
+            #pin4
+                position: absolute
+                left: -10px
+                top: 221px
+                
+            #num1
+                position: absolute
+                left: -51px
+                top: -10px
+                
+            #num2
+                position: absolute
+                left: -51px
+                top: 70px
+                
+            #num3
+                position: absolute
+                left: -51px
+                top: 140px
+                
+            #num4
+                position: absolute
+                left: -51px
+                top: 212px
+                
+            #ben1
+                position: absolute
+                left: 10px
+                bottom: -35px
+                
+            #ben2
+                position: absolute
+                left: 130px
+                bottom: -50px 
+                width: 110px
+                
+            #ben3
+                position: absolute
+                left: 265px
+                bottom: -50px
+                width: 110px
+                
+            #ben4
+                position: absolute
+                left: 402px
+                bottom: -50px
+                width: 110px
+            
+            span.dot
+                width: 12px
+                height: 12px
+                border: 1px solid #FFFFFF
+                border-radius: 50%
+                transform: scale(1)
+                transition: 0.3s all
+                cursor: pointer
+                &:hover
+                    transform: scale(1.2)
+
+            .triangle
+                position: absolute
+                width: 100%
+                height: 100%
+                display: none
+                img
+                    position: absolute
+                    top: 0
+                    left: 0
+                p
+                    position: absolute
+                    top: 95%
+                    left: 48%
+                    width: 160px
+                    font-family: Coco Gothic Small Caps
+                    font-size: 18px
+                    line-height: 20px
+                    text-align: left
+                        
+
+
+            #tri1
+                top: -86px
+                left: -500px
+            #tri2
+                bottom: 156px
+                left: -370px
+            #tri3
+                bottom: 228px
+                left: -235px
+            #tri4
+                bottom: 304px
+                left: -95px
+
+
+
+
+            #dot1
+                position: absolute
+                left: 51px
+                bottom: 44px
+                background: #2F80ED
+                
+                
+            #dot2
+                position: absolute
+                left: 178px
+                bottom: 114px
+                background: #2400FF
+                
+            #dot3
+                position: absolute
+                left: 311px
+                bottom: 187px
+                background: #2400FF
+                
+            #dot4
+                position: absolute
+                left: 449px
+                bottom: 262px
+                background: #FF5C00
+                
+

@@ -1,0 +1,20 @@
+@mixin mw($width) {
+    @media (max-width: $width)
+        {
+            @content
+        }
+}
+
+@mixin mh($height) {
+    @media (max-height: $height)
+        {
+            @content
+        }
+}
+
+@mixin mnw($width) {
+    @media (min-width: $width)
+        {
+            @content
+        }
+}

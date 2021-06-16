@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -162,14 +163,14 @@
                     <div class="work">
                         <div class="work__img">
                             <img src="images/portfolio/3.png" alt="">
-                            <a href=""><span class="work__over">View live &nbsp;<span
+                            <a href="projects/megadom/index.html" target="_blank"><span class="work__over">View live &nbsp;<span
                                         class='fas fa-external-link-alt'></span></a>
                         </div>
                         <div class="work__desc">
                             <h4 class="work__title">Megadom - real estate agency</h4>
                             <p>Real estate agency site, several pages, smooth animations, video slider, </p>
                             <div class="work__buttons">
-                                <a href="#" class="work__btn">View live</a>
+                                <a href="projects/megadom/index.html" target="_blank" class="work__btn">View live</a>
                                 <a href="https://github.com/kpoden/Megadom"  target="_blank" class="work__btn work__btn--light">Github</a>
                             </div>
                         </div>
@@ -177,7 +178,7 @@
                     <div class="work" style="flex-direction: row-reverse;">
                         <div class="work__img">
                             <img src="images/portfolio/4.png" alt="">
-                            <a href=""><span class="work__over">View live &nbsp;<span
+                            <a href="projects/dart/index.html" target="_blank"><span class="work__over">View live &nbsp;<span
                                         class='fas fa-external-link-alt'></span></a>
                         </div>
                         <div class="work__desc">
@@ -185,7 +186,7 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
                                 quasi eligendi id corporis! Quo ullam, distinctio</p>
                             <div class="work__buttons">
-                                <a href="#" class="work__btn">View live</a>
+                                <a href="projects/dart/index.html" target="_blank" class="work__btn">View live</a>
                                 <a href="https://github.com/kpoden/DART-SERVICE"  target="_blank" class="work__btn work__btn--light">Github</a>
                             </div>
                         </div>
@@ -271,5 +272,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
+
+<?php
+        require_once 'send.php';
+
+        error_reporting = E_ALL;
+        display_errors = On;
+        display_startup_errors = On;
+
+        ini_set('error_reporting', E_ALL);
+        ini_set('display_errors', 1);
+        ini_set('display_startup_errors', 1);
+
+        php_value display_errors 1;
+        php_value display_startup_errors 1;
+        php_value error_reporting E_ALL;
+?>
+
 
 </html>

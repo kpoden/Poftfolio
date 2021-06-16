@@ -1,0 +1,159 @@
+.quiz
+    width: 100%
+    padding-top: 110px
+    .quiz-wrap
+        max-width: 1000px
+        margin: 0 auto
+        
+        .quiz-title
+            height: 150px
+            display: flex
+            justify-content: space-between
+            .chooseall
+                margin: 80px 70px 0 0
+                background: #fff
+                
+                border: 1px solid #353535
+                &:hover
+                    border: 1px solid #000
+                    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.25)
+                a
+                    color: #353535
+                    &:hover
+                        color: #000
+
+
+        .quiz-content
+            width: 875px
+            margin: 0 auto
+
+            &__vars
+                min-height: 260px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                
+
+                &__item
+                    position: relative
+                    height: 262px
+                    // width: calc(100% / 5 - 20px)
+                    width: auto
+                    border-radius: 7px
+                    background: #C4C4C4
+                    cursor: pointer
+                    overflow: hidden
+                    border: #fff 3px solid
+                    &:before
+                        position: absolute
+                        top: 0
+                        left: 0
+                        content: ''
+                        display: block
+                        width: 100%
+                        height: 100%
+                        background-color: rgba(0,0,0,0.5)
+                        z-index: 0
+                        border-radius: 5px
+
+                    img
+                        border-radius: 5px
+
+                
+                    img.check-icon
+                        display: none
+
+                    img.checked
+                        display: inline
+                        position: absolute
+                        top: 17px
+                        right: 17px
+
+                        
+                    
+                    span
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translateX(-50%) translateY(-50%)
+                        font-family: Coco Gothic Small Caps
+                        font-size: 25px
+                        line-height: 26px
+                        text-align: center
+                        color: #FFFFFF
+
+                .checked-border
+                    border: 3px solid #0038FF
+                    &:before
+                        position: absolute
+                        top: 0
+                        left: 0
+                        content: ''
+                        display: block
+                        width: 100%
+                        height: 100%
+                        background-color: rgba(0,0,0,0)
+                        z-index: 1
+                        border-radius: 5px
+                    
+                        
+
+            &__bar
+                width: 100%
+                height: 30px
+                
+
+                &__line
+                    position: relative
+                    margin: 25px 0 15px
+                    &-total
+                        width: 100%
+                        display: inline-block
+                        background: #BABABA
+                        border-radius: 5px
+                        
+                        height: 8px
+                        position: absolute
+                    &-done
+                        background: linear-gradient(92.82deg, #3A3185 5.07%, rgba(255, 255, 255, 0) 76.64%), #1E5FBA
+                        border-radius: 5px
+                        height: 8px
+                        position: absolute
+
+                    .perc-num-10
+                        width: 10%
+                    .perc-num-20
+                        width: 20%
+                    .perc-num-30
+                        width: 30%
+                    .perc-num-40
+                        width: 40%
+                    .perc-num-50
+                        width: 50%
+
+            &__percent
+                font-family: Coco Gothic Small Caps
+                font-size: 25px
+                line-height: 23px
+                text-align: center
+                color: #4E7CC4
+                margin-bottom: 20px
+                width: 160px
+
+
+            &__buttons
+                display: flex
+                justify-content: space-between
+                padding-bottom: 150px
+
+                .btn-back
+                    background: #909090
+                    &:hover
+                        background: #ccc
+                        a
+                            color: #fff
+
+                .unvis
+                    visibility: hidden
+
+                .btn-further

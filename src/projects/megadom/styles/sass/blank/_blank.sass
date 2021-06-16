@@ -1,0 +1,93 @@
+.blank
+    width: 587px
+    height: 363px
+    margin: 0 auto
+    background: #fff
+    border: 3px solid #A2D9F7
+    border-radius: 12px
+    margin-top: 45px
+    margin-bottom: 200px
+    position: relative
+    &-header
+        height: 109px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background: #A2D9F7
+        padding: 0 40px
+        color: #1E5FBA
+        
+        &__number
+            border-radius: 50%
+            background-color: #fff
+            height: 54px
+            width: 54px
+            position: relative
+            span
+                position: absolute
+                top: 11px
+                left: 18px
+                font-family: Coco Gothic Small Caps
+                font-size: 39px
+
+        &__title
+            color: #1E5FBA
+            width: 310px
+            h4
+                width: 100px
+
+    &-content
+        padding: 10px 12px
+
+        &__select
+            .blank-content__select__wrap
+                display: none
+                position: absolute
+                z-index: 5000
+
+                .blank-content__select__list
+                    width: 563px
+                    height: 200px
+                    background: #FFFFFF
+                    box-shadow: 1px -1px 5px rgba(0, 0, 0, 0.25), 0px -1px 5px rgba(0, 0, 0, 0.25)
+                    border-radius: 10px
+                    margin-top: 10px
+                    display: flex
+                    justify-content: flex-start
+                    align-items: center
+
+                    ul
+                        width: 100%
+                        li
+                            width: 100%
+                            height: 54px
+                            padding: 16px 0 16px 54px
+                            cursor: pointer
+                            color: #000
+                            transition: 0.1s
+                            &:hover
+                                background: #3369FF
+                                color: #fff
+        
+            input
+                background: #E3E3E3
+                width: 563px
+                height: 63px
+                border: 1.5px solid #FF0000
+                box-sizing: border-box
+                border-radius: 12px
+                padding-left: 30px
+
+            input::placeholder
+                opacity: 0.4
+                font-size: 18px
+
+            input:focus::placeholder 
+                color: transparent
+
+    &__button
+        position: absolute
+        bottom: 20px
+        right: 20px
+                
+

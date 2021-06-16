@@ -128,6 +128,7 @@ gulp.task('libs:build', function(){
         .pipe(gulp.dest(path.build.libs))
 });
 
+
 gulp.task('build', gulp.series(
         'clean', gulp.series(['html:build', 'styles:build', 'scripts:build', 'img:build', 'fonts:build', 'libs:build', 'projects:build'])
     )

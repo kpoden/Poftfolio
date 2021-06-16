@@ -1,0 +1,25 @@
+.slider-dots
+    .slick-list
+        padding: 0 !important
+        position: relative
+        .slick-track
+            display: flex !important
+            flex-direction: column
+            justify-content: space-between
+            height: 100px
+            width: 20px
+            transform: translate3d(0,0,0) !important
+            span
+                width: 7px !important
+                height: 7px !important
+            .slick-current
+                background-color: #2257b1
+
+.slider-dots .slick-dots li.slick-active button::before
+    display: none
+
+.slider-dots .slick-dots li button
+    display: none
+
+.reviews .slick-dots li button::before
+    font-size: 10px

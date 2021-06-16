@@ -1,0 +1,431 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Useful meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <meta name="author" content="Andrew Kotin">
+    <meta name="description" content="Open-code">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Plugins-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css" />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Title -->
+    <title>Объекты</title>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://www.google.ru/chrome/index.html">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!--HEADER-->
+    <header class="header">
+
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-logo">
+                    <a class="header-logo__img">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li class="navigation-list__item"><a href="#" class="navigation-list__link">Главная</a></li>
+                        <li class="navigation-list__item active"><a href="#" class="navigation-list__link">Обьекты</a></li>
+                        <li class="navigation-list__item"><a href="#" class="navigation-list__link">Чат</a></li>
+                        <li class="navigation-list__item"><a href="#" class="navigation-list__link">Калькулятор</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="nav-open">
+                    <button>
+                    </button>
+                </div>
+                <div class="header-buttons">
+                    <div class="header-buttons__item">
+                        <button class="button-mute">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#6699ff"
+                                    d="M18 16v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-5 0h-2v-2h2v2zm0-4h-2V8h2v4zm-1 10c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2z" />
+                        </button>
+                    </div>
+                    <div class="header-buttons__item">
+                        <button class="button-moon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#6699ff"
+                                    d="M9 2c-1.05 0-2.05.16-3 .46 4.06 1.27 7 5.06 7 9.54 0 4.48-2.94 8.27-7 9.54.95.3 1.95.46 3 .46 5.52 0 10-4.48 10-10S14.52 2 9 2z" />
+                        </button>
+                    </div>
+                    <div class="header-buttons__item">
+                        <button class="button-share">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#6699ff"
+                                    d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="header-buttons__item">
+                        <button class="button-add">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#6699ff"
+                                    d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="header-buttons__item">
+                        <button class="button-login">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#6699ff"
+                                    d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z" />
+                        </button>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <h1 class="header-title__item">Обьекты</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="page">
+        <div class="content">
+            <div class="object-wrap">
+                <div class="object-item">
+                    <div class="object-top">
+                        <div class="object-info">
+                            <div class="object-info__item">14/20</div>
+                            <div class="object-info__item object-info__item--dark">39m<sup>2</sup></div>
+                        </div>
+                        <div class="object-img" style="background-image: url(img/build.png)"></div>
+                    </div>
+                    <div class="object-bottom">
+                        <span class="address">Университетская набережная 46</span>
+                        <span class="appartament">1-к</span>
+                        <span class="price">1 670т.р.</span>
+                    </div>
+                    <a href="" class="object-action"></a>
+                </div>
+                <div class="object-item">
+                    <div class="object-top">
+                        <div class="object-info">
+                            <div class="object-info__item">14/20</div>
+                            <div class="object-info__item object-info__item--dark">39m<sup>2</sup></div>
+                        </div>
+                        <div class="object-img" style="background-image: url(img/build.png)"></div>
+                    </div>
+                    <div class="object-bottom">
+                        <span class="address">Университетская набережная 46</span>
+                        <span class="appartament">1-к</span>
+                        <span class="price">1 670т.р.</span>
+                    </div>
+                    <a href="" class="object-action"></a>
+                </div>
+                <div class="object-item">
+                    <div class="object-top">
+                        <div class="object-info">
+                            <div class="object-info__item">14/20</div>
+                            <div class="object-info__item object-info__item--dark">39m<sup>2</sup></div>
+                        </div>
+                        <div class="object-img" style="background-image: url(img/build.png)"></div>
+                    </div>
+                    <div class="object-bottom">
+                        <span class="address">Университетская набережная 46</span>
+                        <span class="appartament">1-к</span>
+                        <span class="price">1 670т.р.</span>
+                    </div>
+                    <a href="" class="object-action"></a>
+                </div>
+                <div class="object-item">
+                    <div class="object-top">
+                        <div class="object-info">
+                            <div class="object-info__item">14/20</div>
+                            <div class="object-info__item object-info__item--dark">39m<sup>2</sup></div>
+                        </div>
+                        <div class="object-img" style="background-image: url(img/build.png)"></div>
+                    </div>
+                    <div class="object-bottom">
+                        <span class="address">Университетская набережная 46</span>
+                        <span class="appartament">1-к</span>
+                        <span class="price">1 670т.р.</span>
+                    </div>
+                    <a href="" class="object-action"></a>
+                </div>
+                <div class="object-item">
+                    <div class="object-top">
+                        <div class="object-info">
+                            <div class="object-info__item">14/20</div>
+                            <div class="object-info__item object-info__item--dark">39m<sup>2</sup></div>
+                        </div>
+                        <div class="object-img" style="background-image: url(img/build.png)"></div>
+                    </div>
+                    <div class="object-bottom">
+                        <span class="address">Университетская набережная 46</span>
+                        <span class="appartament">1-к</span>
+                        <span class="price">1 670т.р.</span>
+                    </div>
+                    <a href="" class="object-action"></a>
+                </div>
+                <div class="object-item">
+                    <div class="object-top">
+                        <div class="object-info">
+                            <div class="object-info__item">14/20</div>
+                            <div class="object-info__item object-info__item--dark">39m<sup>2</sup></div>
+                        </div>
+                        <div class="object-img" style="background-image: url(img/build.png)"></div>
+                    </div>
+                    <div class="object-bottom">
+                        <span class="address">Университетская набережная 46</span>
+                        <span class="appartament">1-к</span>
+                        <span class="price">1 670т.р.</span>
+                    </div>
+                    <a href="" class="object-action"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="content">
+            <div class="appartament-content">
+                <div class="appartament-wrap swiper-container">
+                    <div class="appartament-slider swiper-wrapper">
+                        <div class="appartament-slider__item swiper-slide">
+                            <div class="appartament-slider__inside ">
+                                <div class="appartament-slider__inside-wrap swiper-wrapper">
+                                    <div class="appartament-slider__inside-item swiper-slide"
+                                        style="background-image: url(img/ap.jpg)">
+                                    </div>
+                                    <div class="appartament-slider__inside-item swiper-slide"
+                                        style="background-image: url(img/ap2.jpg)">
+                                    </div>
+                                    <div class="appartament-slider__inside-item swiper-slide"
+                                        style="background-image: url(img/ap3.jpg)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="appartament-slider__info">
+                                <div class="appartament-slider__icon"></div>
+                                <div class="appartament-slider__desc">
+                                    <ul class="appartament-slider__list">
+                                        <li>56 домов</li>
+                                        <li>30 видов планировок</li>
+                                        <li>1к от 1500</li>
+                                        <li>2к от 1890</li>
+                                        <li>3к от 3500</li>
+                                        <li>отделка чистовая</li>
+                                        <li>сдача: сдан</li>
+                                        <li>до 2025г</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="appartament-arrows--item">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="appartament-slider__item swiper-slide">
+                            <div class="appartament-slider__inside ">
+                                <div class="appartament-slider__inside-wrap swiper-wrapper">
+                                    <div class="appartament-slider__inside-item swiper-slide"
+                                        style="background-image: url(img/ap.jpg)">
+                                    </div>
+                                    <div class="appartament-slider__inside-item swiper-slide"
+                                        style="background-image: url(img/ap2.jpg)">
+                                    </div>
+                                    <div class="appartament-slider__inside-item swiper-slide"
+                                        style="background-image: url(img/ap3.jpg)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="appartament-slider__info">
+                                <div class="appartament-slider__icon"></div>
+                                <div class="appartament-slider__desc">
+                                    <ul class="appartament-slider__list">
+                                        <li>56 домов</li>
+                                        <li>30 видов планировок</li>
+                                        <li>1к от 1500</li>
+                                        <li>2к от 1890</li>
+                                        <li>3к от 3500</li>
+                                        <li>отделка чистовая</li>
+                                        <li>сдача: сдан</li>
+                                        <li>до 2025г</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="appartament-arrows--item">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="appartament-slider__item swiper-slide">
+                            <div class="appartament-slider__inside ">
+                                <div class="appartament-slider__inside-wrap swiper-wrapper">
+                                    <div class="appartament-slider__inside-item swiper-slide"
+                                        style="background-image: url(img/ap.jpg)">
+                                    </div>
+                                    <div class="appartament-slider__inside-item swiper-slide"
+                                        style="background-image: url(img/ap2.jpg)">
+                                    </div>
+                                    <div class="appartament-slider__inside-item swiper-slide"
+                                        style="background-image: url(img/ap3.jpg)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="appartament-slider__info">
+                                <div class="appartament-slider__icon"></div>
+                                <div class="appartament-slider__desc">
+                                    <ul class="appartament-slider__list">
+                                        <li>56 домов</li>
+                                        <li>30 видов планировок</li>
+                                        <li>1к от 1500</li>
+                                        <li>2к от 1890</li>
+                                        <li>3к от 3500</li>
+                                        <li>отделка чистовая</li>
+                                        <li>сдача: сдан</li>
+                                        <li>до 2025г</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="appartament-arrows--item">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="appartament-slider__item swiper-slide">
+                            <div class="appartament-slider__inside ">
+                                <div class="appartament-slider__inside-wrap swiper-wrapper">
+                                    <div class="appartament-slider__inside-item swiper-slide"
+                                        style="background-image: url(img/ap.jpg)">
+                                    </div>
+                                    <div class="appartament-slider__inside-item swiper-slide"
+                                        style="background-image: url(img/ap2.jpg)">
+                                    </div>
+                                    <div class="appartament-slider__inside-item swiper-slide"
+                                        style="background-image: url(img/ap3.jpg)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="appartament-slider__info">
+                                <div class="appartament-slider__icon"></div>
+                                <div class="appartament-slider__desc">
+                                    <ul class="appartament-slider__list">
+                                        <li>56 домов</li>
+                                        <li>30 видов планировок</li>
+                                        <li>1к от 1500</li>
+                                        <li>2к от 1890</li>
+                                        <li>3к от 3500</li>
+                                        <li>отделка чистовая</li>
+                                        <li>сдача: сдан</li>
+                                        <li>до 2025г</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="appartament-arrows--item">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="appartament-slider__item swiper-slide">
+                            <div class="appartament-slider__inside ">
+                                <div class="appartament-slider__inside-wrap swiper-wrapper">
+                                    <div class="appartament-slider__inside-item swiper-slide"
+                                        style="background-image: url(img/ap.jpg)">
+                                    </div>
+                                    <div class="appartament-slider__inside-item swiper-slide"
+                                        style="background-image: url(img/ap2.jpg)">
+                                    </div>
+                                    <div class="appartament-slider__inside-item swiper-slide"
+                                        style="background-image: url(img/ap3.jpg)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="appartament-slider__info">
+                                <div class="appartament-slider__icon"></div>
+                                <div class="appartament-slider__desc">
+                                    <ul class="appartament-slider__list">
+                                        <li>56 домов</li>
+                                        <li>30 видов планировок</li>
+                                        <li>1к от 1500</li>
+                                        <li>2к от 1890</li>
+                                        <li>3к от 3500</li>
+                                        <li>отделка чистовая</li>
+                                        <li>сдача: сдан</li>
+                                        <li>до 2025г</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="appartament-arrows--item">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="appartament-arrows">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="promo-inner">
+            <div class="promo-wrap">
+                <div class="promo-item">
+                    <span>Отправить документы по выбраным условиям в банки</span>
+                </div>
+                <div class="promo-button">
+                    <button class="btn-prm">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.js"></script>
+    <script
+        src=" https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

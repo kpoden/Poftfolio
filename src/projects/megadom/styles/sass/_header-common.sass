@@ -1,0 +1,116 @@
+.header-common
+    height: 340px
+    background-color: #1E5FBA
+    position: relative
+    transition: 0.4s
+    .top-nav
+        display: flex
+        align-items: center
+        padding: 40px 50px 0
+        z-index: 1000
+        position: fixed
+        width: 100%
+        transition: 0.4s
+        
+        .logo
+            margin-right: 150px
+            position: relative
+            width: 152px    
+            +mw(1100px)
+                display: none
+            img
+                position: absolute
+                transition: 0.3s
+                top: -27px
+            .logo1
+                opacity: 1
+            .logo2
+                width: 152px
+                opacity: 0
+            
+        nav
+            width: 40%
+            .mainmenu
+                display: flex
+                justify-content: space-around
+                align-items: center
+                height: 45px
+                width: 100%
+                position: relative
+                font-size: 18px
+                min-width: 380px
+                &>li
+                    display: flex
+                    align-items: center
+                    height: 100%
+                    cursor: pointer
+                    transition: 0.5s
+                    position: relative
+                    
+                    &:hover>a
+                        border-bottom: 1px #ddd solid
+                    &:hover .submenu
+                        visibility: visible
+                        opacity: 1
+                        transform: translate(0%, 0)
+
+                .submenu
+                    position: absolute
+                    top: 45px
+                    left: 0
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    width: 210px
+                    height: 140px
+                    background: #FFFFFF
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+                    border-radius: 10px
+                    margin: 0
+                    padding: 15px 0
+                    transition: 0.4s
+                    visibility: hidden
+                    opacity: 0
+                    transform: translate(0%, 20px)
+                    +mw(1500px)
+                        left: 3%
+                    // +mw(1300px)
+                    //     left: 1%
+                    +mw(1000px)
+                        left: 0%
+                    // +mw(900px)
+                    //     left: -2%
+                    li
+                        width: 100%                    
+                        a
+                            display: block
+                            color: #000
+                            font-size: 16px
+                            padding: 8px 0
+                            width: 100%
+                            padding-left: 35px
+                            &:hover
+                                background: #eee
+
+    .fixed-nav
+        padding: 10px 50px 10px 50px
+        background-color: #1E5FBA
+        height: 94px
+
+    .header-common_title_wrap
+        max-width: 1350px
+        position: relative
+        height: 100%
+        margin: auto
+
+
+
+        .header-common_title
+            position: absolute
+            left: 100px
+            bottom: 100px
+            color: #A2D9F7
+            font-size: 39px
+            font-family: "Coco Gothic Small Caps", sans-serif
+            width: 600px
+

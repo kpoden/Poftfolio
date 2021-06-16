@@ -1,0 +1,34 @@
+.departments
+    background-color: #fff
+    width: 100%
+    padding-bottom: 400px
+
+    .department
+        max-width: 1060px
+        margin: 0 auto
+        padding-top: 83px
+        h1
+            font-size: 33px
+            margin-left: 17px
+            font-family: Roboto, sans-serif
+        &-team
+            padding-top: 30px
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            +mw(1100px)
+                justify-content: flex-start
+
+            &__item
+                margin: 17px
+                width: 228px
+                height: 238px
+                overflow: hidden
+                background: #CACACA
+                border-radius: 5px
+                +mw(1100px)
+                    width: 28%
+
+                img
+                    height: 100%
+                    

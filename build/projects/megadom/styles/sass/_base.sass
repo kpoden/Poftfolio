@@ -1,0 +1,145 @@
+
+    
+.wrapper
+    width: 100%
+    max-width: 2100px
+    min-width: 1000px
+    margin: 0 auto
+    overflow: hidden
+
+body
+    background-color: #fff
+
+
+*
+    box-sizing: border-box
+
+html
+    font-size: 18px
+    font-family: 'Roboto', sans-serif
+    color: #1C1B1B
+    font-weight: normal
+
+body
+    padding: 0
+    margin: 0
+
+h1
+    margin: 0
+    padding: 0
+    font-family: 'Coco Gothic Small Caps', sans-serif
+    font-weight: normal
+
+h2, h3, h4
+    margin: 0
+    padding: 0
+    font-weight: normal
+
+a,
+a:focus,
+a:active
+    text-decoration: none
+    color: #fff
+    transition: 0.3s
+a:hover
+    color: #bbb
+
+
+ul,li
+    list-style: none
+    margin: 0
+    padding: 0
+
+.bold
+    font-weight: 700
+
+.btn
+    display: block
+    text-align: center
+    width: 160px
+    height: 46px
+    border-radius: 40px
+    text-transform: uppercase
+    background: linear-gradient(103.02deg, #246FD9 9.11%, rgba(125, 133, 143, 0.167944) 42.73%), #393185
+    color: #ffffff
+    font-weight: 600
+    transition: 0.3s
+    border: none
+    &:hover
+        background: linear-gradient(103.02deg, #ffffff 9.11%, rgba(125, 133, 143, 0.167944) 42.73%), #ffffff
+    &:active
+        box-shadow: inset 0px 0px 10px #a1a1a1
+    &:hover a
+        color: #393185 
+    a
+        font-family: 'Coco Gothic Small Caps', sans-serif
+        font-size: 16px  
+        line-height: 50px
+        letter-spacing: 0.12em
+        display: block
+        width: 100%
+        height: 100%
+
+.wow
+    visibility: hidden
+
+#red
+    color: #FF4D4D
+    transition: 0.2s
+    &:hover
+        color: #FF0000
+
+
+.border-left
+    border-left: 0.5px solid #FFFFFF
+
+.info
+    position: relative
+
+    &_icon
+        width: 20px
+        height: 20px
+        &:hover
+            cursor: help
+
+    &_appear
+        position: relative
+        display: none
+        opacity: 0.9
+        top: 18px
+        left: 7px
+
+        &_arrow
+            position: absolute
+            width: 0
+            height: 0
+            border: 20px solid transparent
+            border-left: 0
+            border-right-color: #5B5B5B
+            left: -6px
+            top: -22px
+        &_text
+            position: absolute
+            width: 260px
+            height: 120px
+            background-color: #5B5B5B
+            top: -65px
+            left: 0
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 19px
+            line-height: 22px
+            color: #fff
+            padding: 15px 15px 15px 15px
+            border-radius: 5px
+            #info_close
+                position: absolute
+                right: 5px
+                top: 5px
+                color: #00A0E3
+                cursor: pointer
+                font-size: 40px
+                        
+    a
+        color: #00A0E3

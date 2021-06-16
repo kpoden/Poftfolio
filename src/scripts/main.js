@@ -125,11 +125,6 @@ gsap.from(".contacts__title + .title-line", .4,{
 
 
 
-// document.querySelector("nav__link").forEach((btn, index) => {
-//     btn.addEventListener("click", () => {
-//         gsap.to(window, {duration: 1, scrollTo:{y:"#section" + (index + 1), offsetY:70}});
-//     });
-    // });
 
 ////**** GSAP SECTION END ****////
 
@@ -172,6 +167,14 @@ window.onresize = function(event) {
 
 
 ////**** FOOTER FORM SECTION  ****////
+
+window.onload = function() {
+    if ($('.form-field').val() !== ''|| $('.submit__textarea').val() !== '') {
+        $('.form-field').val('');
+        $('.submit__textarea').val('');
+
+    }
+}
 
 $('.contacts__field, .contacts__msg').val('');
 
