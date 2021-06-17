@@ -9,16 +9,8 @@
 </head>
 
 <body>
-    thanks
-    thanks
-    thanks for
-    Windows PowerShell
-    (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+    <h1>thanks</h1>
 
-    Попробуйте новую кроссплатформенную оболочку PowerShell (https://aka.ms/pscore6)
-
-    PS C:\Users\User\Documents\GitHub\poden>
-</body>
 
 </html>
 
@@ -27,8 +19,20 @@
     $to      = 'kpodenejny@gmail.com';
     $subject = 'Work';
     $message = $_POST['message'];
+    $headers = 
+
+    $message = htmlspecialchars($message);
+    $name = htmlspecialchars($name);
 
 
     mail($to, $subject, $message);
     header("Location: http://poden.ru");
+
+
+
+    ini_set('error_reporting', E_ALL);
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+
+
 ?>

@@ -193,3 +193,29 @@ $('.contacts__field, .contacts__msg').on('blur', function() {
     }
 })
 ////**** FOOTER FORM SECTION END ****////
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('form');
+        form.addEventListener('submit', formSend);
+
+        async function formSend(e) {
+            e.preventDefault();
+
+            let error = validateForm(form);
+        }
+    })
+
+    function validateForm(form) {
+        let error = 0;
+        let formReq = document.querySelectorAll('_req');
+
+        for (let index = 0; index < formReq.length; index++) {
+
+            const input = formReq[index];
+
+            
+            
+        }
+
+    }
