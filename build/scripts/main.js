@@ -126,6 +126,8 @@ gsap.from(".contacts__title + .title-line", .4,{
 
 
 
+
+
 ////**** GSAP SECTION END ****////
 
 
@@ -152,6 +154,14 @@ $('.dark-bg').on('click', function(){
     $('.dark-bg').removeClass('dark-bg--active');
 })
 
+$('.nav__link').on('click', function(){
+    if($(window).width() < 979) {
+        $('.burger__out').removeClass('burger--active');
+        $('.nav__bar').removeClass('nav__bar--active');
+        $('.dark-bg').removeClass('dark-bg--active');
+    }
+})
+
 window.onresize = function(event) {
     if($(window).width() > 979) {
         $('.burger__out').removeClass('burger--active');
@@ -159,6 +169,13 @@ window.onresize = function(event) {
         $('.dark-bg').removeClass('dark-bg--active');
     }
 };
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 780) {
+        $('#up-btn').fadeIn();
+    }
+    else $('#up-btn').fadeOut();
+});
 
 ////**** MOBILE MENU SECTION END****////
 
@@ -194,6 +211,9 @@ $('.contacts__field, .contacts__msg').on('blur', function() {
 })
 ////**** FOOTER FORM SECTION END ****////
 
+/*-----------------------------------------------------------*/
+
+////**** FORM VALIDATE AND SEND CODE ****////
 
     document.addEventListener('DOMContentLoaded', function() {
         const form = document.getElementById('form');
@@ -213,9 +233,43 @@ $('.contacts__field, .contacts__msg').on('blur', function() {
         for (let index = 0; index < formReq.length; index++) {
 
             const input = formReq[index];
-
-            
             
         }
 
     }
+
+    ////**** FORM VALIDATE AND SEND CODE END****////
+    
+navLinks = document.querySelectorAll('.nav__link');
+
+navLinks.forEach(element => element.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementsByClassName('')
+
+    
+}))
+
+
+document.getElementById("main").addEventListener("click", ()=> {
+    gsap.to(window, {duration: 1, scrollTo: {y: ".main"}})
+})
+
+document.getElementById("up-btn").addEventListener("click", ()=> {
+    gsap.to(window, {duration: .5, scrollTo: {y: ".main"}})
+})
+
+document.getElementById("skills").addEventListener("click", ()=> {
+    gsap.to(window, {duration: 1, scrollTo: {y: ".skills"}})
+})
+document.getElementById("works").addEventListener("click", ()=> {
+    gsap.to(window, {duration: 1, scrollTo: {y: ".portfolio"}})
+})
+document.getElementById("contacts").addEventListener("click", ()=> {
+    gsap.to(window, {duration: 1, scrollTo: {y: ".contacts"}})
+})
+document.getElementById("view-work").addEventListener("click", ()=> {
+    gsap.to(window, {duration: 1, scrollTo: {y: ".portfolio"}})
+})
+document.getElementById("get-in-touch").addEventListener("click", ()=> {
+    gsap.to(window, {duration: 1, scrollTo: {y: ".contacts"}})
+})

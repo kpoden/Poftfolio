@@ -14,6 +14,12 @@
         max-width: 2000px
         padding: 0 30px
         position: relative
+        +mw(1400)
+            padding: 0 60px
+        +mw480
+            padding: 0 30px
+        
+
         
 
 
@@ -89,7 +95,8 @@
             transition: .1s
             &:hover
                 background: #34961b
-
+                
+    //*************** BURGER MENU *******************//
       
     .burger
         display: none
@@ -104,8 +111,11 @@
         cursor: pointer
         +mw979
             display: block
-        +mw480
+        +mw600
+            top: 40px
             right: 85px
+            width: 50px
+            height: 40px
         
         span
             display: block
@@ -128,13 +138,20 @@
         span
             &:nth-child(1)
                 transform:  translateY(25px) rotate(-135deg)
+                +mw600
+                    transform:  translateY(20px) rotate(-135deg)
             &:nth-child(2)
                 opacity: 0
             &:nth-child(3)
                 transform:  translateY(-25px) rotate(135deg)
+                +mw600
+                    transform:  translateY(-20px) rotate(135deg)
 
     .burger--active
         display: none
+
+
+    //*************** BURGER MENU END*******************//
         
     &__main
         padding: 50px 0 20px 0
@@ -148,6 +165,9 @@
         +mw979
             justify-content: center 
             min-height: 450px
+
+        +mw480
+            padding-top: 25px
 
 
     &__hello
@@ -205,7 +225,7 @@
         background: #34961b
         color: #fff
         text-transform: uppercase
-        padding-left: 5px
+        padding: 5px
         width: 100%
         overflow: hidden
         z-index: 100
@@ -228,6 +248,7 @@
         transition: .2s ease-out;
         transform: translateY(20px)
         opacity: 0
+        text-align: center
         &:hover
             background-position: left
             color: #ffffff
@@ -236,6 +257,8 @@
             font-size: 12px
             margin: 20px 10px 0
 
+        +mw480
+            width: 80%
 
     &__image
         transform: scaleX(0)
@@ -247,6 +270,8 @@
         justify-content: center
         position: relative
         overflow: hidden
+        +mw1180
+            width: 350px
         +mw979
             display: none
         
@@ -254,6 +279,8 @@
             width: 60%
             position: relative
             transform: translateY(-100px)
+            +mw1180
+                width: 80%
 
 
         .header-img-wrap
@@ -265,21 +292,43 @@
             height: 650px
             background: #dad59b
 
-.lang
+
+
+
+.lang 
     position: absolute
     top: 50%
-    right: 10px
+    right: 0px
     font-size: 12px
     transform: rotate(90deg)
     font-family: Montserrat
-    
 
+    &.desc
+        +mw979
+            display: none
+
+    &.mob
+        display: none
+        right: -10px
+        a
+            font-size: 16px
+        +mw979
+            display: block
+
+        +mw480
+            top: 90%
+            left: 50%
+            transform:  rotate(0deg) translateX(-50%)
+            text-align: center
+
+
+    
     a
         color: #ffffff
         opacity: .3
 
         &:hover
-            opacity: .6
+            opacity: .9
 
     &__div
         height: 10px

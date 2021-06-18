@@ -30,10 +30,6 @@
     +mw600
         width: 40%
 
-
-
-        
-
 .dark-bg
     position: absolute
     top: 0
@@ -48,3 +44,40 @@
     &--active
         opacity: 1
         z-index: 1000
+
+
+#up-btn
+    position: fixed
+    z-index: 1000
+    right: 30px
+    bottom: 20px
+    display: none
+    width: 70px
+    height: 70px
+    background: #34961b
+    opacity: .3
+    border-radius: 20px
+    cursor: pointer
+
+
+    &:after
+        display: inline-block
+        content: "" 
+        border: solid #3949ab
+        border-width: 0 3px 3px 0
+        width: 20px
+        height: 20px
+        position: absolute
+        top: 55%
+        left: 50%
+        transform: translate(-50%, -50%) rotate(-135deg)
+    &:hover
+        opacity: .6
+        transition: .2s
+
+.ru-header
+    font-family: OpenSans !important
+    font-weight: 900
+
+
+
