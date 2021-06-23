@@ -105,14 +105,23 @@
         color: #000
         font-weight: 100
         font-family: Roboto
+        position: relative
+        margin-left: 20px
 
         &:before
             content: ""
             display: inline-block
-            width: 3px
-            height: 3px
+            width: 7px
+            height: 7px
+            position: absolute
+            left: -20px
+            top: 50%
+            transform: translateY(-50%)
+            
             background: #3949ab
-            border-radius: 
+            border-radius: 5px
+            line-height: 100%
+            vertical-align: middle
 
     &__buttons
         display: flex
@@ -130,7 +139,7 @@
         background-size: 220%
         transition: .2s ease-out
         +mw768
-            width: 90px
+            width: 92px
             padding: 5px
 
         

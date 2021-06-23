@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    
     <div class="container">
         <div id="up-btn"></div>
         <div class="dark-bg"></div>
@@ -197,30 +198,7 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="aboutme">
-            <h1 class="aboutme__title block-title">some facts about me</h1>
-            <div class="aboutme__main">
-                <div class="aboutme__img"><img src="http://placeimg.com/640/480/cats" alt=""></div>
-                <div class="aboutme__facts">
-                    <ul class="facts__list">
-                        <li class="facts__item">Lorem ipsum dolor</li>
-                        <li class="facts__item">sit amet consectetur adipisicing elit. Officia squasi eligendi id corporis</li>
-                        <li class="facts__item">Lorem ipsum dolor</li>
-                        <li class="facts__item">Lorem ipsum dolor</li>
-                        <li class="facts__item">Lorem ipsum dolor</li>
-                        <li class="facts__item">Lorem ipsum dolor</li>
-                    </ul>
-                    <ul class="facts__list">
-                        <li class="facts__item">Lorem ipsum dolor</li>
-                        <li class="facts__item">Lorem ipsum dolor</li>
-                        <li class="facts__item">Lorem ipsum dolor</li>
-                        <li class="facts__item">Lorem ipsum dolor</li>
-                        <li class="facts__item">Lorem ipsum dolor</li>
-                        <li class="facts__item">Lorem ipsum dolor</li>
-                    </ul>
-                </div>
-            </div>
-        </section> -->
+        
         <section class="contacts">
             <div class="contacts__wrap">
                 <div class="title-wrap">
@@ -231,21 +209,21 @@
                     <div class="forms-wrap">
                         <p class="contacts__text">Here you can drop me a line...</p>
                         <div class="contacts__form">
-                            <form method="post" action="send.php" id="form">
+                            <form method="post" id="form">
                                 <div class="input-wrap">
                                     <div class="input-field-wrap">
-                                        <input class="contacts__field" type="text" name="name" id="name">
-                                        <span class="input-field-name">Name*</span>
+                                        <input class="contacts__field form__field" type="text" name="name" id="name">
+                                        <span class="input-field-name">Name</span>
                                     </div>
-                                    <div class="input-field-wrap">
-                                        <input class="contacts__field" type="text" name="email" id="email">
+                                    <div class="input-field-wrap ">
+                                        <input class="contacts__field form__field _email" type="text" name="email" id="email">
                                         <span class="input-field-name">Email</span>
                                     </div>
                                 </div>
                                 <div class="textarea-field-wrap">
-                                    <textarea class="contacts__msg" name="message" id="message" cols="30" rows="10"
+                                    <textarea class="contacts__msg form__field" name="message" id="message" cols="30" rows="10"
                                         resizable="false"></textarea>
-                                    <span class="textarea-field-name">Message*</span>
+                                    <span class="textarea-field-name">Message</span>
                                 </div>
                                 <input class="contacts__submit" type="submit" value="Send">
                             </form>
@@ -277,19 +255,3 @@
 </body>
 
 </html>
-
-<?php
-        require_once 'send.php';
-
-        error_reporting = E_ALL;
-        display_errors = On;
-        display_startup_errors = On;
-
-        ini_set('error_reporting', E_ALL);
-        ini_set('display_errors', 1);
-        ini_set('display_startup_errors', 1);
-
-        php_value display_errors 1;
-        php_value display_startup_errors 1;
-        php_value error_reporting E_ALL;
-?>

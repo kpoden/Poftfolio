@@ -52,6 +52,7 @@
         padding-bottom: 50px
         +mw1030
             width: 100%
+            text-align: center
     .textarea-field-wrap
         position: relative
 
@@ -71,7 +72,7 @@
         border-radius: 5px
         transition: .1s
         &:focus
-            box-shadow: 0px 0px 3px 2px #bd9457
+            box-shadow: 0px 0px 3px 2px #90ff81
     .focused
         top: -12px
         left: 2px
@@ -91,10 +92,10 @@
         padding: 5px 10px
         margin-bottom: 20px
         &:focus
-            box-shadow: 0px 0px 3px 2px #bd9457
+            box-shadow: 0px 0px 3px 2px #90ff81
 
     &__links
-        
+        padding-right: 30px
 
 
     &__list
@@ -106,7 +107,7 @@
         font-weight: 100
 
     &__submit
-        background: #fff
+        background: #ffffff
         width: 200px
         height: 50px
         border-radius: 25px
@@ -114,9 +115,14 @@
         transition: .1s
         font-family: Roboto
         font-size: 15px
+        transition: .2s
         &:hover
-            background: #83e46b
+            background: #2df500
 
+        +mw1030
+            width: 40%
+        +mw480
+            width: 80%
     &__year
         text-align: center
         line-height: 20px
