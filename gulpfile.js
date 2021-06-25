@@ -25,6 +25,7 @@ var path = {
 
     build: {
         html: 'build/',
+        htmlRu: 'build/RU',
         styles: 'build/styles/',
         libs: 'build/libs',
         img: 'build/images/',
@@ -35,6 +36,7 @@ var path = {
 
     src: {
         html: 'src/*.html',
+        htmlRu: 'src/RU/*.html',
         styles: 'src/styles/*.sass',
         libs: 'src/libs/**/**.*',
         imgmin: 'src/images/min/**/*.*',
@@ -47,6 +49,7 @@ var path = {
 
     watch: {
         html: 'src/*.html',
+        htmlRu: 'src/RU/*.html',
         styles: 'src/styles/**/*.*',
         img: 'src/images/',
         scripts: 'src/scripts',
@@ -128,14 +131,20 @@ gulp.task('libs:build', function(){
         .pipe(gulp.dest(path.build.libs))
 });
 
+gulp.task('htmlRu:build', function(){
+    return gulp.src(path.src.htmlRu)
+        .pipe(gulp.dest(path.build.htmlRu))
+});
+
 
 gulp.task('build', gulp.series(
-        'clean', gulp.series(['html:build', 'styles:build', 'scripts:build', 'img:build', 'fonts:build', 'libs:build', 'projects:build'])
+        'clean', gulp.series(['html:build', 'styles:build', 'scripts:build', 'img:build', 'fonts:build', 'libs:build', 'projects:build', 'htmlRu:build'])
     )
 );
 
 gulp.task('watch', function(){
     gulp.watch(path.watch.html, gulp.series('html:build'));
+    gulp.watch(path.watch.htmlRu, gulp.series('htmlRu:build'));
     gulp.watch(path.watch.styles, gulp.series('styles:build'));
     gulp.watch(path.watch.scripts, gulp.series('scripts:build'));
     gulp.watch(path.watch.img, gulp.series('img:build'));

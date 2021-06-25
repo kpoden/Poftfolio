@@ -136,10 +136,6 @@ $(document).ready(function () {
     });
 
 
-
-
-
-
     ////**** GSAP SECTION END ****////
 
 
@@ -188,7 +184,7 @@ $(window).scroll(function () {
     } else $('#up-btn').fadeOut();
 });
 
-////**** MOBILE MENU SECTION END****////
+////**** MOBILE MENU SECTION END ****////
 
 
 /*-----------------------------------------------------------*/
@@ -203,8 +199,6 @@ window.onload = function () {
 
     }
 }
-
-// $('.contacts__field, .contacts__msg').val('');
 
 if ($('.contacts__field, .contacts__msg').val !== "") {
     $(this).next().addClass('focused');
@@ -270,8 +264,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 })
 
-
-
 let formReq = document.querySelectorAll('.form__field');
 
 // Getting form fields area for inserting allert after it
@@ -295,6 +287,7 @@ successMessage.id = "_success-alert";
 successMessage.innerHTML = "Your message has been sent!";
 
 
+//Form validation function
 function validateForm(form) {
     let error = 0;
 
@@ -320,7 +313,6 @@ function validateForm(form) {
     }
 
     return error;
-
 }
 
 
@@ -371,6 +363,10 @@ function removeAlert() {
 
 
 ////**** FORM VALIDATE AND SEND CODE END****////
+
+
+
+////**** SCROLL TO SECTIONS FROM NAV ****////
 
 let navLinks = document.querySelectorAll('.nav__link');
 
@@ -438,3 +434,6 @@ document.getElementById("get-in-touch").addEventListener("click", () => {
         }
     })
 })
+
+
+////**** SCROLL TO SECTIONS FROM NAV END****////
